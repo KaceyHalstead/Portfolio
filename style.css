@@ -1,0 +1,301 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier';
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    background: #131313;
+    height:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar_logo{
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Courier';
+}
+
+.navbar_menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar_item{
+    height: 80px;
+}
+
+.navbar_links{
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.navbar_links:hover{
+    color: #ff0844;
+    transition: all 0.3s ease; /* Clean smooth effect */
+}
+
+@media screen and (max-width: 960px){
+
+    *{
+        margin: 0;
+    }
+    
+    .navbar_container{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    .navbar_menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: -1;
+    }
+
+    .navbar_menu.active{
+        background: #131313;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 60vh;
+        font-size: 1.6rem;
+    }
+
+    #navbar_logo{
+        padding-left: 25px;
+    }
+
+    .navbar_toggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+
+    .navbar_item{
+        width: 100%;
+    }
+
+    .navbar_links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar_toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2){ /* Making the menu spin */
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+body{
+    background-image: url('newspaper.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.showcase_list{
+    list-style: none;
+    align-items: center;
+}
+
+.showcase_title{
+    font-size: 30px;
+    font-family:'Courier';
+    padding:50px 100px;
+    color: #ff8177;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #131313;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000;
+}
+
+
+.showcase_item1{
+    position: absolute;
+    border:1px #131313 solid;
+    background-color: #eee;
+    text-align: center;
+    padding: 5px 5px;
+    float: left;
+    width:35%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: 18%;
+    left: 10%;
+    margin: 10px;
+    object-position: left;
+}
+
+.showcase_item2{
+    position: absolute;
+    border:1px #131313 solid;
+    background-color: #eee;
+    text-align: center;
+    padding: 5px 5px;
+    float: right;
+    width:35%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: 18%;
+    right: 10%;
+    margin: 10px;
+}
+
+.showcase_item3{
+    position: absolute;
+    border:1px #131313 solid;
+    background-color: #eee;
+    text-align: center;
+    padding: 5px 5px;
+    float: left;
+    width:35%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: 55%;
+    left: 10%;
+    margin: 10px;
+}
+
+.showcase_item4{
+    position: absolute;
+    border:1px #131313 solid;
+    background-color: #eee;
+    text-align: center;
+    padding: 5px 5px;
+    float: right;
+    width:35%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: 55%;
+    right: 10%;
+    margin: 10px;
+}
+
+.showcase_image{
+    border:1px #131313 solid;
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img {width: 100%}
+
+.showcase_text{
+    color: #131313;
+    word-wrap: break-word;
+}
+
+
+
+.MyWork_title{
+    font-size: 30px;
+    font-family:'Courier';
+    padding:30px 100px;
+    color: #ff8177;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #131313;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000;
+}
+
+.MyWork_item{
+    /*position: absolute;*/
+    border:1px #131313 solid;
+    background-color: #eee;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top:0;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+    list-style: none;
+    padding:5px;
+    padding-bottom: 25px;
+}
+
+.ReadMoreButton{
+    float:right;
+    text-decoration: none;
+    border:1px #131313 solid;
+    color: #131313;
+    background-color:#ff8177;
+}
+
+
+.footer{
+    border:1px #131313 solid;
+    background: #131313;
+    padding:20px 20px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
