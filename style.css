@@ -539,8 +539,8 @@ img {width: 100%}
 
 @media screen and (max-width: 700px){
     .footerAboutMe{
-        position: absolute;
-        bottom: -50%;
+        position: relative;
+        bottom: -1000%;
     }
 }
 
