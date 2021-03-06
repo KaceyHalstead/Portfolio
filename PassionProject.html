@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kacey Halstead</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Navbar-->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a id="navbar_logo" href="index.html">Kacey Halstead</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="index.html" class="navbar_links" id="home-page">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="MyWork.html" class="navbar_links" id="mywork-page">My Work</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="AboutMe.html" class="navbar_links" id="aboutme-page">About Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="ReadMore">
+        <ul class="ReadMoreList">
+            <li><a href="PassionProjectSS.jpg"><img class="showcase_image" src="PassionProjectSS.jpg"></a></li>
+            <li><p class="ReadMoreText"> I tackled this project in April/May 2020 and decided to specifically devote my time to learning new features and mechanics in the Unreal Engine 4 that I could include in this game. Some of these features are listed below: </p></li>
+            <br><br>
+            <li>
+                <ul class="VideoButton">
+                    <li class="ReadMoreVideoButton">
+                        <video id="FoodDrink" class="Video" width="720" height="440">
+                            <source src="FoodDrinkScreen.mp4" type="video/mp4">
+                        </video>   
+                    </li>
+                    <li>
+                        <button class="PlayPauseButton" id="FDButton" onclick="FDPlayPause()">Play</button>
+                    </li>
+                </ul>
+            </li>
+            <li><p class="ReadMoreText"> Within this project, I studied user interfaces; specifically how they function and how the player can interact with them. This video shows my working food and drink system that requires the player to pay in-game money to buy specific food and drink.</p></li>
+            <br><br>
+            <li>
+                <ul class="VideoButton">
+                    <li class="ReadMoreVideoButton">
+                        <video id="Interaction" class="Video" width="720" height="440">
+                            <source src="InteractionClip.mp4" type="video/mp4">
+                        </video>   
+                    </li>
+                    <li>
+                        <button class="PlayPauseButton" id="IButton" onclick="IPlayPause()">Play</button>
+                    </li>
+                </ul>
+            </li>
+            <li><p class="ReadMoreText"> Furthermore, I looked into NPCs and made a communication screen to allow the player to talk to John the NPC. Depending on the player's choices, the friendship meter could increase or decrease. Once friends, John appears on the player's 'friends list'. </p></li>
+            <br><br>
+            <li>
+                <ul class="VideoButton">
+                    <li class="ReadMoreVideoButton">
+                        <video id="DayNight" class="Video" width="720" height="440">
+                            <source src="DayNightCycle.mp4" type="video/mp4">
+                        </video>   
+                    </li>
+                    <li>
+                        <button class="PlayPauseButton" id="DNButton" onclick="DNPlayPause()">Play</button>
+                    </li>
+                </ul>
+            </li>
+            <li><p class="ReadMoreText"> Finally, I looked into the day/night cycle. This was an important feature that made the world seem dynamic. When the transition occurs, the player's view switches to look at the sky so they can physically see the sun setting and the stars appearing. </p></li>
+            <br><br>
+
+            <li><p class="ReadMoreText"> </p></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+<footer class="footerScroll">   
+    <p class="FooterText">Copyright &copy; 2021 Kacey Halstead. All Rights Reserved.</p>
+</footer>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kacey Halstead</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Navbar-->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a id="navbar_logo" href="index.html">Kacey Halstead</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="index.html" class="navbar_links" id="home-page">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="MyWork.html" class="navbar_links" id="mywork-page">My Work</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="AboutMe.html" class="navbar_links" id="aboutme-page">About Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="ReadMore">
+        <ul class="ReadMoreList">
+            <li>
+                <ul class="VideoButton">
+                    <li class="ReadMoreVideoButton">
+                        <video id="PickUp" class="Video" width="720" height="440">
+                            <source src="PickingUp.mp4" type="video/mp4">
+                        </video>   
+                    </li>
+                    <li>
+                        <button class="PlayPauseButton" id="PUButton" onclick="PUPlayPause()">Play</button>
+                    </li>
+                </ul>
+            </li>
+            <li><p class="ReadMoreText"> I created this project very recently over January 2021 and researched the bone structure of skeletal meshes and how they are manipulated. This mechanic lead me to attach a static mesh to the hand of my character and this, along with an animation, created the illusion of my character picking up an object.  </p></li>
+            <br><br>
+            <li>
+                <ul class="VideoButton">
+                    <li class="ReadMoreVideoButton">
+                        <video id="Inventory" class="Video" width="720" height="440">
+                            <source src="Inventory system.mp4" type="video/mp4">
+                        </video>   
+                    </li>
+                    <li>
+                        <button class="PlayPauseButton" id="InButton" onclick="InPlayPause()">Play</button>
+                    </li>
+                </ul>
+            </li>
+            <li><p class="ReadMoreText"> Within this project, I created an inventory system that allows the player to pick up any item in any order and this will be added to the inventory along with the number of different items they have collected. This can be toggled on and off by pressing the "I" key. </p></li>
+            <br><br>
+            <li>
+                <ul class="VideoButton">
+                    <li class="ReadMoreVideoButton">
+                        <video id="Trolley" class="Video" width="720" height="440">
+                            <source src="Trolley.mp4" type="video/mp4">
+                        </video>   
+                    </li>
+                    <li>
+                        <button class="PlayPauseButton" id="TButton" onclick="TPlayPause()">Play</button>
+                    </li>
+                </ul>
+            </li>
+            <li><p class="ReadMoreText"> Alongside this, I toggled the visibility of the shopping cart on the third person character, creating and destroying the trolley actor so the player can accurately pick up the trolley and place it back down. The player can push/let go of the trolley by pressing the "T" key. </p></li>
+
+        </ul>
+    </div>
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+<footer class="footerScroll">   
+    <p class="FooterText">Copyright &copy; 2021 Kacey Halstead. All Rights Reserved.</p>
+</footer>
+</html>

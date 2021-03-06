@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kacey Halstead</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Navbar-->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a id="navbar_logo" href="index.html">Kacey Halstead</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="index.html" class="navbar_links" id="home-page">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="MyWork.html" class="navbar_links" id="mywork-page">My Work</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="AboutMe.html" class="navbar_links" id="aboutme-page">About Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <div class="ReadMore">
+        <ul class="ReadMoreList">
+            <li>
+                <ul class="VideoButton">
+                    <li class="ReadMoreVideoButton">
+                        <video id="WholeLevel" class="Video" width="720" height="440">
+                            <source src="UnityGameWholeLevel.mp4" type="video/mp4">
+                        </video>   
+                    </li>
+                    <li>
+                        <button class="PlayPauseButton" id="WLButton" onclick="WLPlayPause()">Play</button>
+                    </li>
+                </ul>
+            </li>
+            <li><p class="ReadMoreText"> I created this 3-level 2D platformer as part of my Computer Science A Level course. This project required a lot of research and dedication as this was my first time creating a game in Unity, however, I was much more comfortable using Unity and programming in C# by the end of the assignment. This was a great learning experience and has inspired me to learn more about this game engine. </p></li>
+            <br><br>
+            <li>
+                <ul class="VideoButton">
+                    <li class="ReadMoreVideoButton">
+                        <video id="UserInterfaces" class="Video" width="720" height="440">
+                            <source src="UnityGameUserInterfaces.mp4" type="video/mp4">
+                        </video>   
+                    </li>
+                    <li>
+                        <button class="PlayPauseButton" id="UIButton" onclick="UIPlayPause()">Play</button>
+                    </li>
+                </ul>
+            </li>
+            <li><p class="ReadMoreText"> During this project, I learnt how to create user interfaces on Unity, which lead me to make a fully functiuonal Main Menu, HUD and pause menu. Also, using player prefs, I was able to implement a highscore system that calculated the player's average time and place it on the Main Menu screen. </p></li>
+            <br><br>
+            <li>
+                <ul class="VideoButton">
+                    <li class="ReadMoreVideoButton">
+                        <a href="UnityGameCodeExample.jpg"><img class="showcase_image" src="UnityGameCodeExample.jpg"></a>
+                    </li>
+                </ul>
+            </li>
+            <li><p class="ReadMoreText"> This is an example of my "CloudScript" that makes the cloud disappear after 5 seconds of the player standing on it, and reappear 3 seconds later. This was to add an extra challenge to the game.</p></li>
+            <br><br>
+        </ul>
+    </div>
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+<footer class="footerScroll">   
+    <p class="FooterText">Copyright &copy; 2021 Kacey Halstead. All Rights Reserved.</p>
+</footer>
+</html>

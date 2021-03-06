@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kacey Halstead</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar-->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a id="navbar_logo" href="index.html">Kacey Halstead</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="index.html" class="navbar_links" id="home-page">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="MyWork.html" class="navbar_links" id="mywork-page">My Work</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="AboutMe.html" class="navbar_links" id="aboutme-page">About Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="ReadMore">
+        <ul class="ReadMoreList">
+            <li><a href="OnlineStorefrontSS.JPG"><img class="showcase_image" src="OnlineStorefrontSS.jpg"></a></li>
+            <li><p class="ReadMoreText"> I created this online storefront October/November 2020 as part of a college assignment. During this project, I further developed my understanding of arrays and refined my knowledge of user interfaces, as stated below: </p></li>
+            <br><br>
+            <li>
+                <ul class="VideoButton">
+                    <li class="ReadMoreVideoButton">
+                        <video id="Sort" class="Video" width="720" height="440">
+                            <source src="SortingSystem.mp4" type="video/mp4">
+                        </video>   
+                    </li>
+                    <li>
+                        <button class="PlayPauseButton" id="SButton" onclick="SPlayPause()">Play</button>
+                    </li>
+                </ul>
+            </li>
+            <li><p class="ReadMoreText"> Within this project, I studied user interfaces further to achieve the most user-friendly layout for an online storefront, taking feedback from regular storefront users about current competitors to see where I could improve upon this. </p></li>
+            <br><br>
+            <li>
+                <ul class="VideoButton">
+                    <li class="ReadMoreVideoButton">
+                        <video id="WLSC" class="Video" width="720" height="440">
+                            <source src="OnlineStorefrontWLSC.mp4" type="video/mp4">
+                        </video>   
+                    </li>
+                    <li>
+                        <button class="PlayPauseButton" id="WLSCButton" onclick="WLSCPlayPause()">Play</button>
+                    </li>
+                </ul>
+            </li>
+            <li><p class="ReadMoreText"> I learnt more efficient ways of storing, obtaining and organising data which lead me to build an efficient shopping cart and wishlist system. This saved me a lot of time as I did not have to create individual interfaces for every game. </p></li>
+            <br><br>
+            <li>
+                <ul class="VideoButton">
+                    <li class="ReadMoreVideoButton">
+                        <video id="LogIn" class="Video" width="720" height="440">
+                            <source src="LogIn.mp4" type="video/mp4">
+                        </video>   
+                    </li>
+                    <li>
+                        <button class="PlayPauseButton" id="LIButton" onclick="LIPlayPause()">Play</button>
+                    </li>
+                </ul>
+            </li>
+            <li><p class="ReadMoreText"> I made a fully functional log-in screen that allowed the user to enter a username and password (or create a new account if they don't have one) to log in. All accounts have separate credits and this is kept track of individually. </p></li>
+            <br><br>
+        </ul>
+    </div>
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+<footer class="footerScroll">   
+    <p class="FooterText">Copyright &copy; 2021 Kacey Halstead. All Rights Reserved.</p>
+</footer>
+</html>

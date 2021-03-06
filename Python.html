@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kacey Halstead</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Navbar-->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a id="navbar_logo" href="index.html">Kacey Halstead</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="index.html" class="navbar_links" id="home-page">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="MyWork.html" class="navbar_links" id="mywork-page">My Work</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="AboutMe.html" class="navbar_links" id="aboutme-page">About Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <div class="ReadMore">
+        <ul class="ReadMoreList">
+            <li>
+                <ul class="VideoButton">
+                    <li class="ReadMoreVideoButton">
+                        <a href="FullPythonCode.jpg"><img class="showcase_image" src="FullPythonCode.jpg"></a>
+                    </li>
+                    <li>
+                        <button class="PlayPauseButton" id="WLButton" onclick="WLPlayPause()">Play</button>
+                    </li>
+                </ul>
+            </li>
+            <li><p class="ReadMoreText"> I created this text-based Rock, Paper, Scissors game in Python. During GCSE Computer Science, I learnt Python and began to understand the basic fundamentals of programming. This was a fun project I created in my own time and within this, I specifcially looked into storing data externally in a text file.  </p></li>
+            <br><br>
+            <li>
+                <ul class="VideoButton">
+                    <li class="ReadMoreVideoButton">
+                        <a href="PythonCodeOutput.jpg"><img class="showcase_image" src="PythonCodeOutput.jpg"></a>
+                    </li>
+                    <li>
+                        <button class="PlayPauseButton" id="UIButton" onclick="UIPlayPause()">Play</button>
+                    </li>
+                </ul>
+            </li>
+            <li><p class="ReadMoreText"> This is how the game functions within the Python shell. The program determines whether the player wins, the computer wins, or whether it was a tie. The overall winner is the first to three wins. </p></li>
+            <br><br>
+            <li>
+                <ul class="VideoButton">
+                    <li class="ReadMoreVideoButton">
+                        <a href="csvFile.jpg"><img class="showcase_image" src="csvFile.jpg"></a>
+                    </li>
+                </ul>
+            </li>
+            <li><p class="ReadMoreText"> This is the CSV file I used to store the number of overall wins by the player within one run of the game. When the game is closed, the PlayerWins value will reset and the player will have to beat the highscore for their score to be remembered. </p></li>
+            <br><br>
+        </ul>
+    </div>
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+<footer class="footerScroll">   
+    <p class="FooterText">Copyright &copy; 2021 Kacey Halstead. All Rights Reserved.</p>
+</footer>
+</html>
