@@ -539,14 +539,14 @@ img {width: 100%}
     }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 400px){
     .footerAboutMe{
         position: relative;
         bottom: -1000%;
     }
     .Video{
-        width: 380px;
-        height: 200px;
+        width: 350px;
+        height: 170px;
     }
 }
 
